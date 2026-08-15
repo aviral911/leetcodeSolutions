@@ -9,7 +9,6 @@ class Solution {
                       count++;
 
                 }
-
             }
             ans[i]=count;
         }
