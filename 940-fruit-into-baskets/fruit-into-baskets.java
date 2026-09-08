@@ -7,11 +7,8 @@ class Solution {
         int type=0;
         while(e<n){
             int ft =fruits[e];
-            // include or expand
             if(fr[ft]==0)type++;
             fr[ft]++;
-
-            // shrink
             while(type > 2){
                 int sft = fruits[s];
                 fr[sft]--;
