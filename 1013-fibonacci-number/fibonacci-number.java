@@ -9,6 +9,6 @@ class Solution {
             return dp[n];
         }
         
-        return dp[n] =fib(n-1)+ fib(n-2);
+        return dp[n] =febo(n-1,dp)+ febo(n-2,dp);
     }
 }
