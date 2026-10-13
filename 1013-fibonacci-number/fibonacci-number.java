@@ -8,7 +8,7 @@ class Solution {
             return 1;
             
         }
-        int ans = fib(n-1)+fib(n-2);
-        return ans;
+       int ans= fib(n-1)+fib(n-2);
+       return ans;
     }
 }
