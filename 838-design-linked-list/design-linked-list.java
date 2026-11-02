@@ -71,17 +71,16 @@ class MyLinkedList {
         head = head.next;
         return;
       }
-     // when kahi or se node hatani 
+     // when kahi or se node hatani
      Node temp = head;
      for(int i = 0 ;i<index-1;i++) temp = temp.next;
      temp.next = temp.next.next;
-     
     }
 }
 class Node{
     int data;
     Node next;
-    public Node(int d){ // constructor 
+    public Node(int d){ // constructor
         data = d;
     }
 }
