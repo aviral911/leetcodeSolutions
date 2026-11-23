@@ -1,5 +1,5 @@
 class Solution {
-       public String removeDuplicates(String s) {
+       public String removeDuplicates(String s) {/* 
         int i = 0, n = s.length();
         char[] res = s.toCharArray();
         for (int j = 0; j < n; ++j, ++i) {
@@ -7,6 +7,23 @@ class Solution {
             if (i > 0 && res[i - 1] == res[i]) // count = 2
                 i -= 2;
         }
-        return new String(res, 0, i);
+        return new String(res, 0, i); */
+        Stack<Character> st = new Stack<>();
+       for(int i=0;i<s.length();i++){
+        char ch = s.charAt(i);
+        if(st.isEmpty()||st.peek()!= ch){
+            st.push(ch);
+        }
+        else{
+            st.pop();
+
+        }
+       }
+       StringBuilder ans = new StringBuilder();
+       while(!st.isEmpty()){
+        ans.append(st.pop());
+       }
+       return ans.reverse().toString();
+        
     }
 }
