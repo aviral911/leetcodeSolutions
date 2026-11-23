@@ -24,6 +24,5 @@ class Solution {
         ans.append(st.pop());
        }
        return ans.reverse().toString();
-        
     }
 }
